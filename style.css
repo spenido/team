@@ -119,6 +119,22 @@ body {
     align-items: center;
 }
 
+#mainSession {
+    width: auto;
+    height: 100vh;
+    margin: 0%;
+
+}
+
+.mainpage {
+    height: auto;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 850px;
+}
+
+
 @media (max-width:698px) {
     .login-div {
         width: 470px;
