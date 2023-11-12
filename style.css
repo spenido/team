@@ -104,6 +104,21 @@ body {
     font-size: 0.7rem;
 }
 
+.input-sect {
+    display: flex;
+    justify-content: space-between;
+}
+
+#toggleButton {
+    cursor: pointer;
+    width: auto;
+    padding: 5px;
+    margin-left: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width:698px) {
     .login-div {
         width: 470px;
