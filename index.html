@@ -15,6 +15,7 @@
     <div class="mainpage">
         <h1>Main Session</h1>
         <p>Welcome to the main session. This content is visible by default.</p>
+        <button onclick="toggleDarkTheme()" class="theme-btn" title="Change themes"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-slash fa-rotate-90"></i><i class="fa-solid fa-moon"></i></button>
     </div>
 </section>
 
@@ -34,15 +35,17 @@
                 <input type="password" id="password" name="password" required>
                 <div id="toggleButton" onclick="togglePasswordVisibility()"><i class='far fa-eye'></i></div>
             </section>
-            <input type="button" value="Submit" onclick="checkPassword()" id="submit-button">
+            <input type="button" value="Submit" onclick="checkPassword()" id="submit-button" on>
         </form>
     
-   <section class="message-center">
+   <section class="message-center" id="mescenter">
         <div id="message"></div>
+        <i class="fa-solid fa-sort-up"></i>
     </section>
 
     <section class="log-help">
-        © 2023 Sproduction group
+        © 2023 Sproduction group 
+        <button onclick="toggleDarkTheme()" class="theme-btn" title="Change themes"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-slash fa-rotate-90"></i><i class="fa-solid fa-moon"></i></button>
     </section>
 
     </section>
@@ -53,6 +56,7 @@
 </section>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1/dist/canvas-confetti.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
