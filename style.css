@@ -1,6 +1,12 @@
 body {
     margin: 0%;
     font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
 }
 
 .login-sect {
@@ -18,7 +24,6 @@ body {
     position: relative;
     width: 350px;
     height: 450px;
-    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 12px;
     padding: 12px;
@@ -64,8 +69,7 @@ body {
 #label {
     font-weight: 900;
     position: absolute;
-    transform: translate(12px, -10px);
-    background-color: white;
+    transform: translate(0px, -25px);
     padding: 2px;
     padding-left: 4px;
     padding-right: 4px;
@@ -90,9 +94,29 @@ body {
 
 
 .message-center {
+    display: none;
     width: auto;
     text-align: center;
     font-size: 0.8rem;
+    animation: fadeinbottom 0.1s ease 0s 1 normal forwards;
+}
+
+#message {
+    padding: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    background-color: rgb(28, 28, 28);
+    width: fit-content;
+    color: rgb(194, 194, 194);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.fa-sort-up {
+    color: rgb(28, 28, 28);
+    transform: translateY(-30px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .log-help {
@@ -126,6 +150,13 @@ body {
 
 }
 
+.theme-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
 .mainpage {
     height: auto;
     width: 50%;
@@ -138,6 +169,11 @@ body {
 @media (max-width:698px) {
     .login-div {
         width: 470px;
+    }
+
+    .mainpage {
+        width: 90%;
+        max-width:none;
     }
 }
 
@@ -152,4 +188,16 @@ body {
         width: 500px;
         box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
     }
+}
+
+@keyframes fadeinbottom {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
