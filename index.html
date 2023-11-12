@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Page</title>
+    <title>Spen.git</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +12,22 @@
 <body>
 
     <section id="mainSession">
-    <div class="mainpage">
-        <h1>Main Session</h1>
-        <p>Welcome to the main session. This content is visible by default.</p>
-        <button onclick="toggleDarkTheme()" class="theme-btn" title="Change themes"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-slash fa-rotate-90"></i><i class="fa-solid fa-moon"></i></button>
+    <div class="mainpage text-log">
+        <h1>Directory</h1>
+        <h4>Welcome to the main session. This content is visible by default.</h4>
+        <div class="navigation">
+            <button class="btn"><i class="fa-solid fa-eye"></i></i><span class="tooltip"><strong>View priview</strong><i class="fa-solid fa-caret-up arrow-narrow"></i></span></button>
+            <button class="btn" onclick="globalshow()"><i class="fa-solid fa-sliders"></i><span class="tooltip"><strong>Settings</strong><i class="fa-solid fa-caret-up arrow-narrow"></i></span></button>
+            <button class="chat-btn btn"><i class="fa-solid fa-message"></i><span class="tooltip"><strong>Global chat</strong><i class="fa-solid fa-caret-up arrow-narrow"></i></span></button>
+        </div>
+
+        <section class="global-chat-sect fixed" id="globalChat">
+            <div class="global-c-div">
+                <div class="nav-global">
+                    <h1>global chat</h1>
+                </div>
+            </div>
+        </section>
     </div>
 </section>
 
