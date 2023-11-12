@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0%;
     font-family: 'Roboto', sans-serif;
@@ -160,11 +162,107 @@ body {
 .mainpage {
     height: auto;
     width: 50%;
+    position: relative;
     margin-right: auto;
     margin-left: auto;
     max-width: 850px;
 }
 
+.navigation {
+    width: auto;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 5px;
+    padding-right: 12px;
+    gap: 12px;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+    transition: 0.4s ease transform;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+}
+
+.btn:hover .tooltip {
+    display: inline-block;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 220%);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 3px;
+    background-color: rgb(28, 28, 28);
+    color: rgb(194, 194, 194);
+    font-size: 0.7rem;
+    border-radius: 5px;
+    animation: fadedbottom 0.1s ease 0s 1 normal forwards;
+}
+
+.arrow-narrow {
+    color: rgb(28, 28, 28);
+    position: absolute;
+    font-size: 0.9rem;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -90%);
+}
+
+.global-chat-sect {
+    width: 100%;
+    height: 100vh;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -0%);
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7514922752808989) 100%);
+}
+
+.global-c-div {
+    width: 540px;
+    height: 690px;
+    margin-bottom: 200px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nav-global {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: auto;
+    height: 60px;
+    background-color: rgb(32, 32, 32);
+}
+
+.nav-global h1 {
+    margin: 0%;
+    color: white;
+    padding: 12px;
+}
+
+.fixed {
+    position: fixed;
+}
 
 @media (max-width:698px) {
     .login-div {
@@ -199,5 +297,15 @@ body {
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes fadedbottom {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
 	}
 }
