@@ -2,48 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
 </head>
 <body>
-    <section class="login-sect" id="loginSect">
-        <div class="login-div">
 
-            <section class="text-log">
-                <h1>Security</h1>
-                <h4>Masuk Sebagai anggota</h4>
-            </section>
+    <div id="mainSession">
+        <h1>Main Session</h1>
+        <p>Welcome to the main session. This content is visible by default.</p>
+    </div>
 
-            <section class="button-log">
+    <section id="securitySession" class="login-sect">
+    <div class="login-div">
 
-                <form id="login-form">
-                    <label for="password" id="label">Password</label>
-                    <input type="password" id="password" name="password" required>
-                    <br>
-                    <button type="button" id="submit-button">Submit</button>
-                </form>
-            
-                <section class="message-center">
-                    <p id="login-message"></p>
-                </section>
+        <section class="text-log">
+            <h1>Masuk</h1>
+            <h4>Sebagai anggota</h4>
+        </section>
 
-                <section class="log-help">
-                    © 2023 Sproduction group
-                </section>
+        <section class="button-log">
 
-            </section>
-
-        </div>
+        <form id="passwordForm">
+            <label for="password" id="label">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="button" value="Submit" onclick="checkPassword()" id="submit-button">
+        </form>
+    
+   <section class="message-center">
+        <div id="message"></div>
     </section>
 
-    <section class="main"></section>
+    <section class="log-help">
+        © 2023 Sproduction group
+    </section>
 
-    <script src="https://kit.fontawesome.com/e1288edb06.js" crossorigin="anonymous"></script>
+    </section>
+
+ 
+        
+    </div></section>
+
 <script src="script.js"></script>
+
 </body>
 </html>
