@@ -66,3 +66,10 @@ function toggleDarkTheme() {
         }
     });
 }
+
+function disLoad () {
+    setTimeout(function () {
+        document.getElementById("areaLoading").style.display = "none";
+        document.getElementById("inter-section").style.display = "block";
+    }, 4000);
+}
