@@ -12,24 +12,22 @@
 <body>
 
     <section id="mainSession">
-    <div class="mainpage text-log">
-        <h1>Directory</h1>
-        <h4>Welcome to the main session. This content is visible by default.</h4>
-        <div class="navigation">
-            <button class="btn"><i class="fa-solid fa-eye"></i></i><span class="tooltip"><strong>View priview</strong><i class="fa-solid fa-caret-up arrow-narrow"></i></span></button>
-            <button class="btn" onclick="globalshow()"><i class="fa-solid fa-sliders"></i><span class="tooltip"><strong>Settings</strong><i class="fa-solid fa-caret-up arrow-narrow"></i></span></button>
-            <button class="chat-btn btn"><i class="fa-solid fa-message"></i><span class="tooltip"><strong>Global chat</strong><i class="fa-solid fa-caret-up arrow-narrow"></i></span></button>
-        </div>
+        <section class="mainpage">
 
-        <section class="global-chat-sect fixed" id="globalChat">
-            <div class="global-c-div">
-                <div class="nav-global">
-                    <h1>global chat</h1>
-                </div>
+        <section class="area-loading" onmouseenter="disLoad()" id="areaLoading">
+            <i class="fa-solid fa-hashtag fa-2xl"></i>
+            <div class="text-cont-loading">
+                <strong>"Istirahatlah,</strong> yang kamu takutkan sudah terjadi.''
+                <h5>Sedang memuat halamanmu <i class='fa-solid fa-spinner fa-spin-pulse'></i></h5>
             </div>
         </section>
-    </div>
+
+        <section class="inter-section" id="inter-section">
+        </section>
+
+    </section>
 </section>
+
 
     <section id="securitySession" class="login-sect">
     <div class="login-div">
